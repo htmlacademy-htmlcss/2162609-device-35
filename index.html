@@ -4,21 +4,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="styles/style.css">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <img class="logo" src="/images/logo/logo-main.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс».">
-      <div id="rectangle">
-      <nav class="navigation">
+      <div class="rectangle">
         <form class="navigation-search">
           <input type="text" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
+        <nav class="navigation-up">
         <ul class="navigation-list">
           <li class="navigation-item">
             <img class="icons-header" src="/images/icons/user.svg" width="13" height="12" alt="Войти на сайт">
@@ -33,6 +33,8 @@
             <a class="navigation-link" href="basket.html">Корзина</a>
           </li>
         </ul>
+        </nav>
+        <nav class="navigation">
         <ul class="navigation-list navigation-device">
           <li class="navigation-item">
             <a class="navigation-link-top" href="#">
@@ -78,12 +80,12 @@
     <main>
       <div class="gallery">
         <button class="slider-button slider-prev" type="button">
-          <img class="arrow" src="/images/icons/Left.png" width="20" height="60" alt="Предыдущее фото"><span class="visually-hidden">Предыдущее фото</span>
-        </button>
+          <img class="arrow" src="/images/icons/Left.png" width="20" height="60" alt="Предыдущее фото"></button>
+          <span class="visually-hidden">Предыдущее фото</span>
         <img class="slider-image" src="/images/catalog/catalog-1.png" width="560" height="560" alt="Представленные товары">
         <button class="slider-button slider-next" type="button">
-          <img class="arrow" src="/images/icons/right.png" width="20" height="60" alt="Следующее фото"><span class="visually-hidden">Следующее фото</span>
-        </button>
+          <img class="arrow" src="/images/icons/right.png" width="20" height="60" alt="Следующее фото"></button>
+          <span class="visually-hidden">Следующее фото</span>
       </div>
       <div class="discription">
         <h1 class="discription-numbers">01</h1>
@@ -107,7 +109,7 @@
       </div>
       <nav class="navigation-device-menu">
         <ul class="navigation-device-menu-list">
-          <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
+          <div class="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-device-menu-item">
             <a class="navigation-device-menu-link" href="#">
               <img class="logo-menu" src="/images/icon-menu/icon-1.png" width="97" height="55" alt="Виртуальная реальность"><br>Виртуальная реальность
@@ -164,28 +166,32 @@
             <img class="delivery-image" src="/images/logo/postman.svg" width="132" height="158" alt="Доставка.">
           </li>
           <li class="delivery-item">
-            <button class="guarantee-button" type="button">
+            <button class="delivery-button" type="button">
               Гарантия
             </button>
-            <h2 class="guarantee-title">Гарантия</h2>
-            <p class="guarantee-description">Тут указано поле для гарантии.</p>
+            <h2 class="delivery-title">Гарантия</h2>
+            <p class="delivery-description">Если из-за возгорания купленного у нас товара у вас<br>
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
             <img class="guarantee-image" src="/images/logo/guarantee.svg" width="171" height="195" alt="Гарантия.">
           </li>
           <li class="delivery-item">
-            <button class="credit-button" type="button">
+            <button class="delivery-button" type="button">
               Кредит
             </button>
-            <h2 class="credit-title">Кредит</h2>
-            <p class="credit-description">Тут указано поле о получение кредита.</p>
+            <h2 class="delivery-title">Кредит</h2>
+            <p class="delivery-description">Залезть в долговую яму стало проще!
+              Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита.
+              Выгодные для банка, разумеется.</p>
             <img class="credit-image" src="/images/logo/credit.svg" width="156" height="188" alt="Кредит.">
           </li>
         </ul>
       </div>
       <div class="delivery-rare-item">
-        <div id="square">
-        <img class="delivery-image-rare" src="/images/icons/dostavka.png" width="47" height="31" alt="Доставим редкий товар под заказ">
+        <div class="square">
+          <img class="delivery-image-rare" src="/images/icons/dostavka.png" width="47" height="31" alt="Доставим редкий товар под заказ">
         </div>
-        <b class="delivery-title">Доставим редкий товар под заказ</b>
+        <b class="delivery-title-order">Доставим редкий товар под заказ</b>
       </div>
       <section class="about">
         <h2 class="about-title">О Нас</h2>
@@ -225,7 +231,7 @@
             <label class="form-label" for="subscription-email"><span class="visually-hidden">Подпишитесь на
                 рассылку</span></label>
             <input type="text" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
-            <button class="button" type="submit">Подписаться</button>
+            <button class="button-subscription" type="submit">Подписаться</button>
           </p>
         </form>
         <p class="subscription-discription">Еженедельный дайджест с обзорами новинок,<br>
