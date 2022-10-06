@@ -3,20 +3,22 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="/images/favicon/favicon.svg" type="images/favicon">
+    <link rel="icon" href="favicon.ico">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <img class="logo" src="/images/logo/logo-main.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс».">
-      <div id="rectangle" style="width:1160px; height:300px; background-color: #ffe17f">
-      <nav class="navigation">
+      <div class="rectangle">
         <form class="navigation-search">
           <input type="text" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
+        <nav class="navigation-up">
         <ul class="navigation-list">
           <li class="navigation-item">
             <img class="icons-header" src="/images/icons/user.svg" width="13" height="12" alt="Войти на сайт">
@@ -31,6 +33,8 @@
             <a class="navigation-link" href="basket.html">Корзина</a>
           </li>
         </ul>
+        </nav>
+        <nav class="navigation">
         <ul class="navigation-list navigation-device">
           <li class="navigation-item">
             <a class="navigation-link-top" href="#">
@@ -76,12 +80,12 @@
     <main>
       <div class="gallery">
         <button class="slider-button slider-prev" type="button">
-          <img class="arrow" src="/images/icons/Left.png" width="20" height="60" alt="Предыдущее фото"><span class="visually-hidden">Предыдущее фото</span>
-        </button>
+          <img class="arrow" src="/images/icons/Left.png" width="20" height="60" alt="Предыдущее фото"></button>
+          <span class="visually-hidden">Предыдущее фото</span>
         <img class="slider-image" src="/images/catalog/catalog-1.png" width="560" height="560" alt="Представленные товары">
         <button class="slider-button slider-next" type="button">
-          <img class="arrow" src="/images/icons/right.png" width="20" height="60" alt="Следующее фото"><span class="visually-hidden">Следующее фото</span>
-        </button>
+          <img class="arrow" src="/images/icons/right.png" width="20" height="60" alt="Следующее фото"></button>
+          <span class="visually-hidden">Следующее фото</span>
       </div>
       <div class="discription">
         <h1 class="discription-numbers">01</h1>
@@ -105,45 +109,45 @@
       </div>
       <nav class="navigation-device-menu">
         <ul class="navigation-device-menu-list">
-          <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
+          <div class="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-device-menu-item">
             <a class="navigation-device-menu-link" href="#">
-              <img class="logo-menu" src="/images/icon-menu/icon-1.png" width="96.95" height="54.99" alt="Виртуальная реальность"><br>Виртуальная реальность
+              <img class="logo-menu" src="/images/icon-menu/icon-1.png" width="97" height="55" alt="Виртуальная реальность"><br>Виртуальная реальность
             </a>
           </li>
         </div>
         <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-device-menu-item">
             <a class="navigation-device-menu-link" href="#">
-              <img class="logo-menu" src="/images/icon-menu/icon-2.png" width="85.87" height="117" alt="Моноподы для селфи"><br>Моноподы для селфи
+              <img class="logo-menu" src="/images/icon-menu/icon-2.png" width="86" height="117" alt="Моноподы для селфи"><br>Моноподы для селфи
             </a>
           </li>
         </div>
         <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-device-menu-item">
             <a class="navigation-device-menu-link" href="#">
-              <img class="logo-menu" src="/images/icon-menu/icon-3.png" width="71.02" height="87" alt="Экшн-камеры"><br>Экшн-камеры
+              <img class="logo-menu" src="/images/icon-menu/icon-3.png" width="71" height="87" alt="Экшн-камеры"><br>Экшн-камеры
             </a>
           </li>
         </div>
         <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-device-menu-item">
             <a class="navigation-device-menu-link" href="#">
-                <img class="logo-menu" src="/images/icon-menu/icon-4.png" width="107.31" height="64.99" alt="Фитнес-браслеты"><br>Фитнес-браслеты
+                <img class="logo-menu" src="/images/icon-menu/icon-4.png" width="107" height="65" alt="Фитнес-браслеты"><br>Фитнес-браслеты
             </a>
           </li>
         </div>
         <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img class="logo-menu" src="/images/icon-menu/icon-5.png" width="56.01" height="97.98" alt="Умные часы"><br>Умные часы
+              <img class="logo-menu" src="/images/icon-menu/icon-5.png" width="56" height="98" alt="Умные часы"><br>Умные часы
             </a>
           </li>
         </div>
         <div id="square" style="width:160px; height:160px; background-color: #ffe17f">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img class="logo-menu" src="/images/icon-menu/icon-6.png" width="132.03" height="69.01" alt="Квадрокоптеры"><br>Квадрокоптеры
+              <img class="logo-menu" src="/images/icon-menu/icon-6.png" width="132" height="69" alt="Квадрокоптеры"><br>Квадрокоптеры
             </a>
           </li>
         </div>
@@ -159,31 +163,35 @@
             <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно! Ведь<br>
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img class="delivery-image" src="/images/logo/postman.svg" width="132.3" height="157.8" alt="Доставка.">
+            <img class="delivery-image" src="/images/logo/postman.svg" width="132" height="158" alt="Доставка.">
           </li>
           <li class="delivery-item">
-            <button class="guarantee-button" type="button">
+            <button class="delivery-button" type="button">
               Гарантия
             </button>
-            <h2 class="guarantee-title">Гарантия</h2>
-            <p class="guarantee-description">Тут указано поле для гарантии.</p>
+            <h2 class="delivery-title">Гарантия</h2>
+            <p class="delivery-description">Если из-за возгорания купленного у нас товара у вас<br>
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.</p>
             <img class="guarantee-image" src="/images/logo/guarantee.svg" width="171" height="195" alt="Гарантия.">
           </li>
           <li class="delivery-item">
-            <button class="credit-button" type="button">
+            <button class="delivery-button" type="button">
               Кредит
             </button>
-            <h2 class="credit-title">Кредит</h2>
-            <p class="credit-description">Тут указано поле о получение кредита.</p>
+            <h2 class="delivery-title">Кредит</h2>
+            <p class="delivery-description">Залезть в долговую яму стало проще!
+              Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита.
+              Выгодные для банка, разумеется.</p>
             <img class="credit-image" src="/images/logo/credit.svg" width="156" height="188" alt="Кредит.">
           </li>
         </ul>
       </div>
       <div class="delivery-rare-item">
-        <div id="square" style="width:125px; height:100px; background-color: #ffe17f">
-        <img class="delivery-image-rare" src="/images/icons/dostavka.png" width="47" height="31.1" alt="Доставим редкий товар под заказ">
+        <div class="square">
+          <img class="delivery-image-rare" src="/images/icons/dostavka.png" width="47" height="31" alt="Доставим редкий товар под заказ">
         </div>
-        <b class="delivery-title">Доставим редкий товар под заказ</b>
+        <b class="delivery-title-order">Доставим редкий товар под заказ</b>
       </div>
       <section class="about">
         <h2 class="about-title">О Нас</h2>
@@ -223,7 +231,7 @@
             <label class="form-label" for="subscription-email"><span class="visually-hidden">Подпишитесь на
                 рассылку</span></label>
             <input type="text" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
-            <button class="button" type="submit">Подписаться</button>
+            <button class="button-subscription" type="submit">Подписаться</button>
           </p>
         </form>
         <p class="subscription-discription">Еженедельный дайджест с обзорами новинок,<br>
@@ -281,7 +289,8 @@
         <address class="footer-contacts-phone">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
         </address>
-        <p class="about-academy-link"><a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-icon" src="/images/logo/html.svg" width="114.9" height="32.9" alt="Переход на сайт HTML Academy"></a></p>
+        <p class="about-academy-link"><a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-icon" src="/images/logo/html.svg" width="115" height="33
+          " alt="Переход на сайт HTML Academy"></a></p>
       </section>
     </footer>
   </body>
