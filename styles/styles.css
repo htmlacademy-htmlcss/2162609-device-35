@@ -3,7 +3,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url(/fonts/raleway/raleway-800.woff2) format("woff2");
+  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/rubik/rubik-400.woff2) format("woff2");
+  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -20,11 +20,12 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url(/fonts/rubik/rubik-700.woff2) format("woff2");
+  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
   font-display: swap;
 }
 
-.rectangle {
+.page-header {
+  margin: 0 auto;
   width: 1160px;
   height: 300px;
   background-color: #ffe17f;
@@ -35,20 +36,148 @@
   height: 100px;
   background-color: #ffe17f;
 }
+html{
+  height: 100%;
+}
+.main-container {
+ flex-grow: 1;
+}
+.nav-header{
+ width: 1040;
+ height: 40px;
+ display: flex;
+ justify-content: space-between;
+}
+
+.navigation-list{
+  width: 523px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+.navigation{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-list__down{
+
+  margin-left: -1100px;
+  width: 1040px;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container__item{
+  margin: 0 auto;
+  width: 1160px;
+  height: 560px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.blog-gallery__item {
+  width: 560px;
+  height: 560px;
+  display: flex;
+justify-content: space-between;
+}
+.blog-gallery__item .slider-image{
+  width: 520px;
+  height: 520px;
+}
+.discription{
+  margin-top: -150px;
+  margin-left: 200px;
+  width: 560px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.main-goods{
+  width: 1160px;
+  height: 253px;
+margin: 0 auto;
+}
+.main-goods__list{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.container-delivery{
+  margin-top: 150px;
+  width: 1160px;
+  height: 391px;
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-list{
+  margin: 0 auto;
+}
+.delivery-title{
+  display:block;
+  flex-direction: column;
+}
+.delivery-rare-item{
+  margin: 0 auto;
+  width: 1160px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1000px;
+}
+.block-about__contacts{
+  margin: 0 auto;
+  width: 1160px;
+  height: 545px;
+  display: flex;
+  justify-content: space-between;
+}
+.subscription {
+  margin: 0 auto;
+  width: 1160px;
+  height: 545px;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top:40px;
   font-family: "Raleway";
   font-size: 16px;
   line-height: 24px;
   color: #000;
   background: #fff;
 }
-
 footer {
+  margin: 0 auto;
   width: 1440px;
   height: 321px;
   background-color: #444444;
 }
+.container{
+  margin: 0 auto;
+  width: 1160px;
+  height: 321px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contacts{
+  width: 239px;
+  height: 182;
+  display: block;
+}
+
 /* Header */
 /* Сокрытие элементов visually-hidden */
 .visually-hidden {
@@ -391,7 +520,36 @@ footer {
   color: #000000;
 }
 
-/*  */
+/* Catalog */
+.catalog-nav__menu{
+  width: 1079px;
+  height: 86px;
+  display: block;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.breadcrumbs{
+  display: flex;
+  justify-content: flex-start;
+}
+.catalog-products{
+ display: block;
+ justify-content: end;
+}
+.catalog-filter__nav{
+  margin: 0 auto;
+  width: 1160px;
+  height: auto;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.product{
+  display: block;
+  justify-content: first baseline;
+}
+
+
 .catalog-products-filter {
   font-family: 'Raleway';
   font-style: normal;
@@ -459,7 +617,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 18px 39px;
-width: 760px;
+width: 660px;
 height: 55px;
 border: 3px solid #E5E5E5;
 }
